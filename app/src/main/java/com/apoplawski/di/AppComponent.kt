@@ -1,11 +1,11 @@
-package com.uk.androidrecruitmentapp.di
+package com.apoplawski.di
 
+import com.apoplawski.ARApplication
 import com.media.base.di.BaseModule
 import com.media.ricknmorty.di.ActivitiesModule
 import com.media.ricknmorty.di.data.ApiModule
 import com.media.ricknmorty.di.FragmentsModule
 import com.media.ricknmorty.di.data.RepositoryModule
-import com.uk.androidrecruitmentapp.ARApplication
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule

@@ -1,8 +1,8 @@
-package com.uk.androidrecruitmentapp
+package com.apoplawski
 
 import android.app.Activity
 import android.app.Application
-import com.uk.androidrecruitmentapp.di.DaggerAppComponent
+import com.apoplawski.di.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
