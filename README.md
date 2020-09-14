@@ -1,4 +1,5 @@
 # RickNMorty App - Artur Popławski
+<img align="center" src="https://github.com/apoplawski96/projects-summary/blob/master/assets/ricknmortyapiclient.jpg" /></a>
 ## Project structure
 * **ricknmorty** - contains all the app specific code
 * **app** - dependency configuration of application
