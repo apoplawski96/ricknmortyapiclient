@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.media.ricknmorty">
+
+    <application>
+        <activity android:name=".presentation.episodes.detail.EpisodeDetailActivity" android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".presentation.MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+    </application>
+
+</manifest>

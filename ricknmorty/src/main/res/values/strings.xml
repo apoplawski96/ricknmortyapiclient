@@ -1,0 +1,8 @@
+<resources>
+    <string name="episodes">Episodes</string>
+    <string name="characters">Characters</string>
+    <string name="locations">Locations</string>
+    <string name="snackbar_error_message">Error</string>
+    <string name="snackbar_action_text">Retry</string>
+    <string name="characters_in_episode">CHARACTERS IN EPISODE</string>
+</resources>

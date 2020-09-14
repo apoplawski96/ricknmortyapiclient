@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation project(':base')
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation kotlinStdLib
+    implementation appcompat
+    implementation androidViewDependencies
+    implementation okhttp3
+    implementation retrofit
+    implementation rxJavaDependencies
+
+    implementation lifecycle
+    kapt lifecycle_compiler
+
+    implementation daggerDependencies
+    kapt daggerKaptDependencies
+
+    androidTestImplementation dagger_test
+    kaptAndroidTest dagger_compiler_test
+
+    testImplementation junit
+    testImplementation mockito
+    testImplementation assertj
+    androidTestImplementation runner
+    androidTestImplementation espresso
+}
