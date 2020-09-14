@@ -1,6 +1,6 @@
 package com.apoplawski.di
 
-import com.apoplawski.ARApplication
+import com.apoplawski.MyApplication
 import com.media.base.di.BaseModule
 import com.media.ricknmorty.di.ActivitiesModule
 import com.media.ricknmorty.di.data.ApiModule
@@ -24,7 +24,7 @@ import javax.inject.Singleton
 )
 interface AppComponent {
 
-    fun inject (application: ARApplication)
+    fun inject (application: MyApplication)
 
     @Component.Builder
     interface Builder {
@@ -32,6 +32,6 @@ interface AppComponent {
         fun build(): AppComponent
 
         @BindsInstance
-        fun applicationBind (application: ARApplication): Builder
+        fun applicationBind (application: MyApplication): Builder
     }
 }
